@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Ice Cream Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #ff8c00;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Our Menu</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <section>
+        <h2>Ice Cream Flavors</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Flavor</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chocolate</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Vanilla</td>
+              <td>$2.50</td>
+            </tr>
+            <tr>
+              <td>Strawberry</td>
+              <td>$3.50</td>
+            </tr>
+          </tbody>
+        </table>
+        <form action="#">
+          <label for="flavor">Choose Your Favorite Flavor:</label>
+          <select id="flavor" name="flavor">
+            <option value="chocolate">Chocolate</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="strawberry">Strawberry</option>
+          </select>
+
+          <label for="quantity">Quantity:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="10"
+            required
+          />
+
+          <button class="hover-button">Order Now</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

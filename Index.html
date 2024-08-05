@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Ice Cream Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .firstpagedesign {
+        background: url("Images/firstpagebanner.jpeg") no-repeat center center;
+        background-size: cover;
+        height: 400px;
+        text-align: center;
+        color: white;
+        padding: 100px 0;
+        font-size: 2em;
+        animation: fadeIn 2s ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Ice Cream Shop</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="firstpagedesign">
+      <div>Delicious Ice Cream Awaits You!</div>
+    </div>
+    <div class="container">
+      <section class="flex-container">
+        <div class="flex-item slide-in">
+          <h2>About Us</h2>
+          <p>
+            We offer a wide variety of ice creams made with the finest
+            ingredients. Our shop is dedicated to bringing you joy with every
+            scoop!
+          </p>
+
+          <video
+            width="500"
+            height="600"
+            controls
+            playsinline
+            autoplay
+            muted
+            loop
+          >
+            <source src="Images/icecreamvideo.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="flex-item slide-in">
+          <h2>Special Offers</h2>
+          <p>
+            Check out our latest promotions and special offers. We have
+            something exciting for everyone!
+          </p>
+
+          <div>
+            <img src="Images/TodaysSpecial.jpeg" alt="Special offer" />
+          </div>
+          <div>
+            <img src="Images/TodaysSpecial2.jpeg" alt="Special offer" />
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
